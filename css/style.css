@@ -154,3 +154,59 @@ nav ul li a i {
 .search-input-box:has(input[type="text"]:focus) i {
   color: #733cd0;
 }
+
+.kanban {
+  display: flex;
+  gap: 4.8rem;
+  margin-top: 3.2rem;
+}
+
+.kanban > * {
+  flex: 1;
+  padding: 2.4rem;
+}
+
+.kanban h2 {
+  font-size: 2rem;
+  color: #403937;
+  padding: 2.4rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.card {
+  padding: 2.4rem;
+  background-color: #fff;
+  box-shadow: 0rem .4rem 1.6rem rgb(234, 226, 253);
+  border-radius: .8rem;
+  line-height: 130%;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #403937;
+}
+
+.card p {
+  font-size: 1.4rem;
+  color: #756966;
+  margin-block: 1rem;
+}
+
+.card .tags {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.card .tags span {
+  border-radius: .8rem;
+  padding: .4rem .8rem;
+  background-color: #E2D6FF;
+  color: #7c3aed;
+  font-size: 1.1rem;
+}
