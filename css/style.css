@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #7c3aed;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+main .inner-content {
+  background-color: #fbfaff;
+  height: 100%;
+  border-top-left-radius: 3.2rem;
+  padding: 4.8rem 3.2rem;
+}
+
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+nav .logo {
+  margin-bottom: 6rem;
+}
+
+nav ul {
+  min-width: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 3.6rem;
+}
+
+nav ul li a {
+  display: flex;
+  gap: 1.85rem;
+  align-items: center;
+  text-decoration: none;
+  color: #cab3ff;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a i {
+  font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.4rem;
+}
+
+.header-title {
+  display: flex;
+  gap: 1.2rem;
+  color: #403937;
+}
+
+.header .profile-picture {
+  width: 6.4rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.search-filter {
+  padding: 0 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.search-filter button {
+  all: unset;
+  padding: 1.4rem 3.2rem;
+  background-color: #7c3aed;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-filter button i {
+  font-size: 2.4rem;
+}
+
+.search-filter button:hover {
+  background-color: #733cd0;
+}
+
+.search-input-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border: 0.08rem #e3e3e3 solid;
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  flex: 1;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+}
+
+.search-input-box i {
+  font-size: 2.4rem;
+  color: #505059;
+}
+
+.search-input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.search-input-box input::placeholder {
+  font-size: 1.6rem;
+  color: #7c7c8a;
+}
+
+.search-input-box:has(input[type="text"]:focus) {
+  border: 0.2rem #733cd0 solid;
+}
+
+.search-input-box:has(input[type="text"]:focus) i {
+  color: #733cd0;
+}

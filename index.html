@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
+    <script src="js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Organizador de Tarefas</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <div class="logo">
+          <img src="assets/logo.svg" alt="Logo do KanBan" />
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="active"
+              ><i class="ph-fill ph-clipboard"></i> Boards</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-users"></i> Equipes</a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-clipboard-text"></i> Relatórios</a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-gear"></i> Ajustes</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="inner-content">
+          <section class="header">
+            <div class="header-title">
+              <h1>Meu KanBan</h1>
+              <img src="assets/pencil.svg" alt="Ícone de Edição" />
+            </div>
+            <img
+              src="assets/profile-picture.jpg"
+              alt="Foto de Perfil do Usuário"
+              class="profile-picture"
+            />
+          </section>
+          <section class="search-filter">
+            <button type="button"><i class="ph ph-funnel-simple"></i> Filtrar</button>
+            <div class="search-input-box">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="text" placeholder="Busque por cards, assuntos ou responsáveis...">
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
