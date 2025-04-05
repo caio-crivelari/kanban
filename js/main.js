@@ -25,7 +25,6 @@ const cardItem = document.querySelectorAll(".card");
 
 cardItem.forEach((card) => {
   card.addEventListener("dragstart", dragStart);
-  card.addEventListener("drag", drag);
   card.addEventListener("dragend", dragEnd);
 });
 
@@ -35,8 +34,6 @@ function dragStart(e) {
   });
   e.currentTarget.classList.add("is-dragging"); // Adiciona a classe "dragging" ao item arrastado
 }
-
-function drag() {}
 
 function dragEnd(e) {
   dropzones.forEach((dropzone) => {
@@ -51,7 +48,6 @@ dropzones.forEach((dropzone) => {
   dropzone.addEventListener("dragenter", dragenter);
   dropzone.addEventListener("dragover", dragover);
   dropzone.addEventListener("dragleave", dragleave);
-  dropzone.addEventListener("drop", drop);
 });
 
 function dragenter() {}
@@ -65,5 +61,3 @@ function dragover(e) {
 function dragleave(e) {
   e.currentTarget.classList.remove("over");
 }
-
-function drop() {}
